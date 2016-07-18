@@ -45,16 +45,16 @@ public class SpecificInstanceToHandleCarActions implements Runnable {
      *  Check LEFT Wheel Of SpecificInstanceToHandleCarActions Car
      */
     private void checkLEFTWheelOfSpecificCar(int numberOfRounds) {
-        LOGGER.info("LEFT wheel for Vin - " + vehicle.getVin() +  " - Checking...");
+        LOGGER.debug("LEFT wheel for Vin - " + vehicle.getVin() +  " - Checking...");
         turnTheWheelOfSpecificCarAndSide(numberOfRounds, "LEFT");
-        LOGGER.info("LEFT wheel for Vin - " + vehicle.getVin() +  " - Was checked");
+        LOGGER.debug("LEFT wheel for Vin - " + vehicle.getVin() +  " - Was checked");
 
     }
 
     private void checkRIGHTWheelOfSpecificCar(int numberOfRounds) {
-        LOGGER.info("RIGHT wheel for Vin -" + vehicle.getVin() +  " - Checking...");
+        LOGGER.debug("RIGHT wheel for Vin -" + vehicle.getVin() +  " - Checking...");
         turnTheWheelOfSpecificCarAndSide(numberOfRounds, "RIGHT");
-        LOGGER.info("RIGHT wheel for Vin - " + vehicle.getVin() +  " - Was checked");
+        LOGGER.debug("RIGHT wheel for Vin - " + vehicle.getVin() +  " - Was checked");
     }
 
     /**
@@ -67,23 +67,23 @@ public class SpecificInstanceToHandleCarActions implements Runnable {
     private void turnTheWheelOfSpecificCarAndSide(int numberOfRounds, String side) {
         int speedNumber;
 
-        LOGGER.info("Before Read: Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
+        LOGGER.debug("Before Read: Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
 
         //Read block
         readWriteLock.readLock().lock();
-            LOGGER.info("In Read: Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
+            LOGGER.debug("In Read: Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
             speedNumber = vehicle.getSpeedometerNumber();
         readWriteLock.readLock().unlock();
 
 
-        LOGGER.info("Before Write: Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
+        LOGGER.debug("Before Write: Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
 
         //Write block
         readWriteLock.writeLock().lock();
 
-            LOGGER.info("In Write: Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
+            LOGGER.debug("In Write: Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
             this.vehicle.setSpeedometerNumber(speedNumber + numberOfRounds);
-            LOGGER.info("After Write: " + "Vin = " + vehicle.getVin() + "** Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
+            LOGGER.debug("After Write: " + "Vin = " + vehicle.getVin() + "** Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
 
         readWriteLock.writeLock().unlock();
 
