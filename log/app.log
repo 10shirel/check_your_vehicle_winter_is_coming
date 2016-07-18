@@ -1,0 +1,356 @@
+2016-07-18 11:57:02.060  INFO 3935 --- [main] com.test.PersonalProjectApplication     : Starting PersonalProjectApplication on Shirels-MacBook-Pro.local with PID 3935 (/Users/shirel/Dev/Sources/PersonalProject/target/classes started by shirel in /Users/shirel/Dev/Sources/PersonalProject)
+2016-07-18 11:57:02.069  INFO 3935 --- [main] com.test.PersonalProjectApplication     : No active profile set, falling back to default profiles: default
+2016-07-18 11:57:02.174  INFO 3935 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a54a73f: startup date [Mon Jul 18 11:57:02 IDT 2016]; root of context hierarchy
+2016-07-18 11:57:05.017  INFO 3935 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-07-18 11:57:05.206  INFO 3935 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$65d40ae8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-18 11:57:06.049  INFO 3935 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-07-18 11:57:06.073  INFO 3935 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-07-18 11:57:06.075  INFO 3935 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.36
+2016-07-18 11:57:06.284  INFO 3935 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-07-18 11:57:06.284  INFO 3935 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4114 ms
+2016-07-18 11:57:06.970  INFO 3935 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-07-18 11:57:06.971  INFO 3935 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-07-18 11:57:06.972  INFO 3935 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-07-18 11:57:06.972  INFO 3935 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-07-18 11:57:06.975  INFO 3935 --- [localhost-startStop-1] .e.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2016-07-18 11:57:06.975  INFO 3935 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-07-18 11:57:07.560  INFO 3935 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2016-07-18 11:57:07.561  INFO 3935 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2016-07-18 11:57:07.561  INFO 3935 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2016-07-18 11:57:07.561  INFO 3935 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2016-07-18 11:57:07.562  INFO 3935 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/error'], []
+2016-07-18 11:57:07.685  INFO 3935 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5dc8f35a, org.springframework.security.web.context.SecurityContextPersistenceFilter@74747ffe, org.springframework.security.web.header.HeaderWriterFilter@89d3ea0, org.springframework.security.web.authentication.logout.LogoutFilter@1eddfd5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1857ac3e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e99662f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65817c7c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52425d3, org.springframework.security.web.session.SessionManagementFilter@480c78ad, org.springframework.security.web.access.ExceptionTranslationFilter@4440fc05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7493af76]
+2016-07-18 11:57:08.361  INFO 3935 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-07-18 11:57:08.389  INFO 3935 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-07-18 11:57:08.565  INFO 3935 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-07-18 11:57:08.570  INFO 3935 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-07-18 11:57:08.574  INFO 3935 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-07-18 11:57:09.254  INFO 3935 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-07-18 11:57:09.419  INFO 3935 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-07-18 11:57:09.684  INFO 3935 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-07-18 11:57:10.222  INFO 3935 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-07-18 11:57:10.240  INFO 3935 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-07-18 11:57:11.353  INFO 3935 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a54a73f: startup date [Mon Jul 18 11:57:02 IDT 2016]; root of context hierarchy
+2016-07-18 11:57:11.496  INFO 3935 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/persons/findPersonById/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.test.ws.api.PersonController.getPersonById(long)
+2016-07-18 11:57:11.498  INFO 3935 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/persons/findPersonsByFirstName],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Person>> com.test.ws.api.PersonController.getPersonsByFirstName(java.lang.String)
+2016-07-18 11:57:11.499  INFO 3935 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/persons/findPersonsByLastName],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Person>> com.test.ws.api.PersonController.getPersonsByLastName(java.lang.String)
+2016-07-18 11:57:11.501  INFO 3935 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/findVehiclesByManufacture],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Vehicle>> com.test.ws.api.VehicleController.getVehiclesByManufacture(java.lang.String)
+2016-07-18 11:57:11.502  INFO 3935 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/findVehicleByVin/{vin}],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.test.ws.api.VehicleController.getPersonByVin(java.lang.String)
+2016-07-18 11:57:11.503  INFO 3935 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/findVehiclesByModelName],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Vehicle>> com.test.ws.api.VehicleController.getVehiclesByModelName(java.lang.String)
+2016-07-18 11:57:11.503  INFO 3935 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/checkWheelsOfCars],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.test.ws.api.VehicleController.checkWheelsOfCar()
+2016-07-18 11:57:11.510  INFO 3935 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-07-18 11:57:11.511  INFO 3935 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-07-18 11:57:11.596  INFO 3935 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 11:57:11.597  INFO 3935 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 11:57:11.745  INFO 3935 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 11:57:12.358  INFO 3935 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-07-18 11:57:12.495  INFO 3935 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-07-18 11:57:12.708  INFO 3935 --- [main] com.test.PersonalProjectApplication     : Started PersonalProjectApplication in 11.608 seconds (JVM running for 13.705)
+2016-07-18 11:57:47.991  INFO 3935 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-07-18 11:57:47.992  INFO 3935 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-07-18 11:57:48.034  INFO 3935 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2016-07-18 11:57:48.539  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 11-111-11 - Checking...
+2016-07-18 11:57:48.540  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : Before Read: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.540  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : In Read: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.540  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : Before Write: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.540  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : In Write: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.540  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : After Write: Vin = 11-111-11** Side = LEFT - Speedo Number = 10
+2016-07-18 11:57:48.540  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 11-111-11 - Was checked
+2016-07-18 11:57:48.541  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin -11-111-11 - Checking...
+2016-07-18 11:57:48.541  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : Before Read: Side = RIGHT - Speedo Number = 10
+2016-07-18 11:57:48.541  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : In Read: Side = RIGHT - Speedo Number = 10
+2016-07-18 11:57:48.541  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : Before Write: Side = RIGHT - Speedo Number = 10
+2016-07-18 11:57:48.541  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : In Write: Side = RIGHT - Speedo Number = 10
+2016-07-18 11:57:48.541  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : After Write: Vin = 11-111-11** Side = RIGHT - Speedo Number = 31
+2016-07-18 11:57:48.542  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin - 11-111-11 - Was checked
+2016-07-18 11:57:48.542  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 22-222-22 - Checking...
+2016-07-18 11:57:48.542  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : Before Read: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.542  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : In Read: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.542  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : Before Write: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.542  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : In Write: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.542  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : After Write: Vin = 22-222-22** Side = LEFT - Speedo Number = 100
+2016-07-18 11:57:48.542  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 22-222-22 - Was checked
+2016-07-18 11:57:48.543  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin -22-222-22 - Checking...
+2016-07-18 11:57:48.543  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : Before Read: Side = RIGHT - Speedo Number = 100
+2016-07-18 11:57:48.543  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : In Read: Side = RIGHT - Speedo Number = 100
+2016-07-18 11:57:48.543  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : Before Write: Side = RIGHT - Speedo Number = 100
+2016-07-18 11:57:48.543  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : In Write: Side = RIGHT - Speedo Number = 100
+2016-07-18 11:57:48.543  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : After Write: Vin = 22-222-22** Side = RIGHT - Speedo Number = 310
+2016-07-18 11:57:48.543  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin - 22-222-22 - Was checked
+2016-07-18 11:57:48.545  INFO 3935 --- [pool-2-thread-3] c.t.T.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 33-333-33 - Checking...
+2016-07-18 11:57:48.545  INFO 3935 --- [pool-2-thread-3] c.t.T.SpecificInstanceToHandleCarActions : Before Read: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.545  INFO 3935 --- [pool-2-thread-3] c.t.T.SpecificInstanceToHandleCarActions : In Read: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.545  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 44-444-44 - Checking...
+2016-07-18 11:57:48.545  INFO 3935 --- [pool-2-thread-3] c.t.T.SpecificInstanceToHandleCarActions : Before Write: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.545  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : Before Read: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.545  INFO 3935 --- [pool-2-thread-3] c.t.T.SpecificInstanceToHandleCarActions : In Write: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : In Read: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-3] c.t.T.SpecificInstanceToHandleCarActions : After Write: Vin = 33-333-33** Side = LEFT - Speedo Number = 1000
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : Before Write: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-3] c.t.T.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 33-333-33 - Was checked
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : In Write: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-3] c.t.T.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin -33-333-33 - Checking...
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : After Write: Vin = 44-444-44** Side = LEFT - Speedo Number = 1000
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-3] c.t.T.SpecificInstanceToHandleCarActions : Before Read: Side = RIGHT - Speedo Number = 1000
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 44-444-44 - Was checked
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-3] c.t.T.SpecificInstanceToHandleCarActions : In Read: Side = RIGHT - Speedo Number = 1000
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin -44-444-44 - Checking...
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-3] c.t.T.SpecificInstanceToHandleCarActions : Before Write: Side = RIGHT - Speedo Number = 1000
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : Before Read: Side = RIGHT - Speedo Number = 1000
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-3] c.t.T.SpecificInstanceToHandleCarActions : In Write: Side = RIGHT - Speedo Number = 1000
+2016-07-18 11:57:48.546  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : In Read: Side = RIGHT - Speedo Number = 1000
+2016-07-18 11:57:48.547  INFO 3935 --- [pool-2-thread-3] c.t.T.SpecificInstanceToHandleCarActions : After Write: Vin = 33-333-33** Side = RIGHT - Speedo Number = 3100
+2016-07-18 11:57:48.547  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : Before Write: Side = RIGHT - Speedo Number = 1000
+2016-07-18 11:57:48.547  INFO 3935 --- [pool-2-thread-3] c.t.T.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin - 33-333-33 - Was checked
+2016-07-18 11:57:48.547  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : In Write: Side = RIGHT - Speedo Number = 1000
+2016-07-18 11:57:48.547  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : After Write: Vin = 44-444-44** Side = RIGHT - Speedo Number = 3100
+2016-07-18 11:57:48.547  INFO 3935 --- [pool-2-thread-1] c.t.T.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin - 44-444-44 - Was checked
+2016-07-18 11:57:48.548  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 55-555-55 - Checking...
+2016-07-18 11:57:48.548  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : Before Read: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.548  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : In Read: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.548  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : Before Write: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.549  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : In Write: Side = LEFT - Speedo Number = 0
+2016-07-18 11:57:48.549  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : After Write: Vin = 55-555-55** Side = LEFT - Speedo Number = 1000
+2016-07-18 11:57:48.549  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 55-555-55 - Was checked
+2016-07-18 11:57:48.549  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin -55-555-55 - Checking...
+2016-07-18 11:57:48.549  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : Before Read: Side = RIGHT - Speedo Number = 1000
+2016-07-18 11:57:48.549  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : In Read: Side = RIGHT - Speedo Number = 1000
+2016-07-18 11:57:48.549  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : Before Write: Side = RIGHT - Speedo Number = 1000
+2016-07-18 11:57:48.550  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : In Write: Side = RIGHT - Speedo Number = 1000
+2016-07-18 11:57:48.550  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : After Write: Vin = 55-555-55** Side = RIGHT - Speedo Number = 3100
+2016-07-18 11:57:48.550  INFO 3935 --- [pool-2-thread-2] c.t.T.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin - 55-555-55 - Was checked
+2016-07-18 11:57:48.550  INFO 3935 --- [http-nio-8080-exec-1] c.t.T.MngThreadsToHandleSpecificCar      : The task was completed in time
+ Result: 
+2016-07-18 12:20:42.080  INFO 3935 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a54a73f: startup date [Mon Jul 18 11:57:02 IDT 2016]; root of context hierarchy
+2016-07-18 12:20:42.090  INFO 3935 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-07-18 12:20:42.093  INFO 3935 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-07-18 12:20:42.094  INFO 3935 --- [Thread-3] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-07-18 12:20:42.107  INFO 3935 --- [Thread-3] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-07-18 12:20:46.508  INFO 4071 --- [main] com.test.PersonalProjectApplication     : Starting PersonalProjectApplication on Shirels-MacBook-Pro.local with PID 4071 (/Users/shirel/Dev/Sources/PersonalProject/target/classes started by shirel in /Users/shirel/Dev/Sources/PersonalProject)
+2016-07-18 12:20:46.515  INFO 4071 --- [main] com.test.PersonalProjectApplication     : No active profile set, falling back to default profiles: default
+2016-07-18 12:20:46.622  INFO 4071 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a54a73f: startup date [Mon Jul 18 12:20:46 IDT 2016]; root of context hierarchy
+2016-07-18 12:20:49.097  INFO 4071 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-07-18 12:20:49.274  INFO 4071 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e711e67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-18 12:20:50.065  INFO 4071 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-07-18 12:20:50.090  INFO 4071 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-07-18 12:20:50.092  INFO 4071 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.36
+2016-07-18 12:20:50.305  INFO 4071 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-07-18 12:20:50.305  INFO 4071 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3689 ms
+2016-07-18 12:20:50.957  INFO 4071 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-07-18 12:20:50.958  INFO 4071 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-07-18 12:20:50.958  INFO 4071 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-07-18 12:20:50.958  INFO 4071 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-07-18 12:20:50.960  INFO 4071 --- [localhost-startStop-1] .e.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2016-07-18 12:20:50.961  INFO 4071 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-07-18 12:20:51.522  INFO 4071 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2016-07-18 12:20:51.524  INFO 4071 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2016-07-18 12:20:51.525  INFO 4071 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2016-07-18 12:20:51.525  INFO 4071 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2016-07-18 12:20:51.525  INFO 4071 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/error'], []
+2016-07-18 12:20:51.657  INFO 4071 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33fdd058, org.springframework.security.web.context.SecurityContextPersistenceFilter@3fe3bb67, org.springframework.security.web.header.HeaderWriterFilter@5519e9bc, org.springframework.security.web.authentication.logout.LogoutFilter@625483f5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7b82e159, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f0c4e1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40da8278, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59bd496e, org.springframework.security.web.session.SessionManagementFilter@46a60762, org.springframework.security.web.access.ExceptionTranslationFilter@54d3dd2a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e61b1d]
+2016-07-18 12:20:52.312  INFO 4071 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-07-18 12:20:52.339  INFO 4071 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-07-18 12:20:52.515  INFO 4071 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-07-18 12:20:52.529  INFO 4071 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-07-18 12:20:52.533  INFO 4071 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-07-18 12:20:53.144  INFO 4071 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-07-18 12:20:53.304  INFO 4071 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-07-18 12:20:53.583  INFO 4071 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-07-18 12:20:54.204  INFO 4071 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-07-18 12:20:54.226  INFO 4071 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-07-18 12:20:55.119  INFO 4071 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a54a73f: startup date [Mon Jul 18 12:20:46 IDT 2016]; root of context hierarchy
+2016-07-18 12:20:55.270  INFO 4071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/persons/findPersonById/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.test.ws.api.PersonController.getPersonById(long)
+2016-07-18 12:20:55.272  INFO 4071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/persons/findPersonsByFirstName],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Person>> com.test.ws.api.PersonController.getPersonsByFirstName(java.lang.String)
+2016-07-18 12:20:55.273  INFO 4071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/persons/findPersonsByLastName],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Person>> com.test.ws.api.PersonController.getPersonsByLastName(java.lang.String)
+2016-07-18 12:20:55.276  INFO 4071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/findVehicleByVin/{vin}],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.test.ws.api.VehicleController.getPersonByVin(java.lang.String)
+2016-07-18 12:20:55.276  INFO 4071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/findVehiclesByManufacture],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Vehicle>> com.test.ws.api.VehicleController.getVehiclesByManufacture(java.lang.String)
+2016-07-18 12:20:55.277  INFO 4071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/findVehiclesByModelName],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Vehicle>> com.test.ws.api.VehicleController.getVehiclesByModelName(java.lang.String)
+2016-07-18 12:20:55.277  INFO 4071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/checkWheelsOfCars],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.test.ws.api.VehicleController.checkWheelsOfCar()
+2016-07-18 12:20:55.284  INFO 4071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-07-18 12:20:55.284  INFO 4071 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-07-18 12:20:55.363  INFO 4071 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 12:20:55.364  INFO 4071 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 12:20:55.458  INFO 4071 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 12:20:56.051  INFO 4071 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-07-18 12:20:56.196  INFO 4071 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-07-18 12:20:56.429  INFO 4071 --- [main] com.test.PersonalProjectApplication     : Started PersonalProjectApplication in 11.0 seconds (JVM running for 12.784)
+2016-07-18 12:32:23.215  INFO 4071 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a54a73f: startup date [Mon Jul 18 12:20:46 IDT 2016]; root of context hierarchy
+2016-07-18 12:32:23.220  INFO 4071 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-07-18 12:32:23.226  INFO 4071 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-07-18 12:32:23.228  INFO 4071 --- [Thread-3] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-07-18 12:32:23.243  INFO 4071 --- [Thread-3] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-07-18 12:46:11.365  INFO 4131 --- [main] c.test.PersonalProjectApplicationTests   : Starting PersonalProjectApplicationTests on Shirels-MacBook-Pro.local with PID 4131 (/Users/shirel/Dev/Sources/PersonalProject/target/test-classes started by shirel in /Users/shirel/Dev/Sources/PersonalProject)
+2016-07-18 12:46:11.371  INFO 4131 --- [main] c.test.PersonalProjectApplicationTests   : No active profile set, falling back to default profiles: default
+2016-07-18 12:46:11.485  INFO 4131 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e694b3f: startup date [Mon Jul 18 12:46:11 IDT 2016]; root of context hierarchy
+2016-07-18 12:46:13.487  INFO 4131 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-07-18 12:46:13.624  INFO 4131 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db87b03f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-18 12:46:14.368  INFO 4131 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-07-18 12:46:14.406  INFO 4131 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-07-18 12:46:14.528  INFO 4131 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-07-18 12:46:14.531  INFO 4131 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-07-18 12:46:14.533  INFO 4131 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-07-18 12:46:14.858  INFO 4131 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-07-18 12:46:14.996  INFO 4131 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-07-18 12:46:15.170  INFO 4131 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-07-18 12:46:15.672  INFO 4131 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-07-18 12:46:15.691  INFO 4131 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-07-18 12:46:16.883  INFO 4131 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3e694b3f: startup date [Mon Jul 18 12:46:11 IDT 2016]; root of context hierarchy
+2016-07-18 12:46:16.999  INFO 4131 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/persons/findPersonById/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.test.ws.api.PersonController.getPersonById(long)
+2016-07-18 12:46:17.001  INFO 4131 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/persons/findPersonsByFirstName],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Person>> com.test.ws.api.PersonController.getPersonsByFirstName(java.lang.String)
+2016-07-18 12:46:17.002  INFO 4131 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/persons/findPersonsByLastName],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Person>> com.test.ws.api.PersonController.getPersonsByLastName(java.lang.String)
+2016-07-18 12:46:17.005  INFO 4131 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/findVehicleByVin/{vin}],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.test.ws.api.VehicleController.getPersonByVin(java.lang.String)
+2016-07-18 12:46:17.006  INFO 4131 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/findVehiclesByManufacture],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Vehicle>> com.test.ws.api.VehicleController.getVehiclesByManufacture(java.lang.String)
+2016-07-18 12:46:17.007  INFO 4131 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/findVehiclesByModelName],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Vehicle>> com.test.ws.api.VehicleController.getVehiclesByModelName(java.lang.String)
+2016-07-18 12:46:17.008  INFO 4131 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/checkWheelsOfCars],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.test.ws.api.VehicleController.checkWheelsOfCar()
+2016-07-18 12:46:17.013  INFO 4131 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-07-18 12:46:17.014  INFO 4131 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-07-18 12:46:17.074  INFO 4131 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 12:46:17.075  INFO 4131 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 12:46:17.143  INFO 4131 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 12:46:17.630  INFO 4131 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2016-07-18 12:46:17.630  INFO 4131 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2016-07-18 12:46:17.630  INFO 4131 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2016-07-18 12:46:17.631  INFO 4131 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2016-07-18 12:46:17.631  INFO 4131 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/error'], []
+2016-07-18 12:46:17.736  INFO 4131 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f642bf, org.springframework.security.web.context.SecurityContextPersistenceFilter@11bfffb3, org.springframework.security.web.header.HeaderWriterFilter@675ec28b, org.springframework.security.web.authentication.logout.LogoutFilter@3af36922, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2eebce87, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33f4c769, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@615e83ac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43e3a390, org.springframework.security.web.session.SessionManagementFilter@59f45950, org.springframework.security.web.access.ExceptionTranslationFilter@6eede35e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@fe8aaeb]
+2016-07-18 12:46:18.114  INFO 4131 --- [main] c.test.PersonalProjectApplicationTests   : Started PersonalProjectApplicationTests in 7.479 seconds (JVM running for 8.468)
+2016-07-18 12:46:18.161  INFO 4131 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3e694b3f: startup date [Mon Jul 18 12:46:11 IDT 2016]; root of context hierarchy
+2016-07-18 12:46:18.172  INFO 4131 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-07-18 12:46:18.173  INFO 4131 --- [Thread-2] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-07-18 12:46:18.182  INFO 4131 --- [Thread-2] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-07-18 12:50:19.077  INFO 4135 --- [main] com.test.PersonalProjectApplication      : Starting PersonalProjectApplication on Shirels-MacBook-Pro.local with PID 4135 (/Users/shirel/Dev/Sources/PersonalProject/target/classes started by shirel in /Users/shirel/Dev/Sources/PersonalProject)
+2016-07-18 12:50:19.085  INFO 4135 --- [main] com.test.PersonalProjectApplication      : No active profile set, falling back to default profiles: default
+2016-07-18 12:50:19.185  INFO 4135 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a54a73f: startup date [Mon Jul 18 12:50:19 IDT 2016]; root of context hierarchy
+2016-07-18 12:50:22.269  INFO 4135 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-07-18 12:50:22.438  INFO 4135 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7aa9688d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-18 12:50:23.223  INFO 4135 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-07-18 12:50:23.249  INFO 4135 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-07-18 12:50:23.251  INFO 4135 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.36
+2016-07-18 12:50:23.454  INFO 4135 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-07-18 12:50:23.454  INFO 4135 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4277 ms
+2016-07-18 12:50:24.150  INFO 4135 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-07-18 12:50:24.151  INFO 4135 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-07-18 12:50:24.152  INFO 4135 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-07-18 12:50:24.152  INFO 4135 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-07-18 12:50:24.154  INFO 4135 --- [localhost-startStop-1] .e.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2016-07-18 12:50:24.154  INFO 4135 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-07-18 12:50:24.780  INFO 4135 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2016-07-18 12:50:24.781  INFO 4135 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2016-07-18 12:50:24.782  INFO 4135 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2016-07-18 12:50:24.782  INFO 4135 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2016-07-18 12:50:24.782  INFO 4135 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/error'], []
+2016-07-18 12:50:24.923  INFO 4135 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1313eec3, org.springframework.security.web.context.SecurityContextPersistenceFilter@29cd1c4b, org.springframework.security.web.header.HeaderWriterFilter@157e481c, org.springframework.security.web.authentication.logout.LogoutFilter@3e018e0e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3e6a607c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67ad4317, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52ff661d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fcb13d3, org.springframework.security.web.session.SessionManagementFilter@3c63a05e, org.springframework.security.web.access.ExceptionTranslationFilter@50f9119e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72b0ed43]
+2016-07-18 12:50:25.550  INFO 4135 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-07-18 12:50:25.582  INFO 4135 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-07-18 12:50:25.718  INFO 4135 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-07-18 12:50:25.721  INFO 4135 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-07-18 12:50:25.724  INFO 4135 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-07-18 12:50:26.454  INFO 4135 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-07-18 12:50:26.650  INFO 4135 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-07-18 12:50:26.905  INFO 4135 --- [main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-07-18 12:50:27.465  INFO 4135 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-07-18 12:50:27.485  INFO 4135 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-07-18 12:50:28.420  INFO 4135 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a54a73f: startup date [Mon Jul 18 12:50:19 IDT 2016]; root of context hierarchy
+2016-07-18 12:50:28.552  INFO 4135 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/persons/findPersonById/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.test.ws.api.PersonController.getPersonById(long)
+2016-07-18 12:50:28.554  INFO 4135 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/persons/findPersonsByFirstName],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Person>> com.test.ws.api.PersonController.getPersonsByFirstName(java.lang.String)
+2016-07-18 12:50:28.555  INFO 4135 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/persons/findPersonsByLastName],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Person>> com.test.ws.api.PersonController.getPersonsByLastName(java.lang.String)
+2016-07-18 12:50:28.559  INFO 4135 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/findVehicleByVin/{vin}],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.test.ws.api.VehicleController.getPersonByVin(java.lang.String)
+2016-07-18 12:50:28.560  INFO 4135 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/findVehiclesByManufacture],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Vehicle>> com.test.ws.api.VehicleController.getVehiclesByManufacture(java.lang.String)
+2016-07-18 12:50:28.562  INFO 4135 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/findVehiclesByModelName],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.test.model.Vehicle>> com.test.ws.api.VehicleController.getVehiclesByModelName(java.lang.String)
+2016-07-18 12:50:28.562  INFO 4135 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/vehicles/checkWheelsOfCars],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.test.ws.api.VehicleController.checkWheelsOfCar()
+2016-07-18 12:50:28.572  INFO 4135 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-07-18 12:50:28.573  INFO 4135 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-07-18 12:50:28.642  INFO 4135 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 12:50:28.642  INFO 4135 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 12:50:28.740  INFO 4135 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-07-18 12:50:29.492  INFO 4135 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-07-18 12:50:29.804  INFO 4135 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-07-18 12:50:30.078  INFO 4135 --- [main] com.test.PersonalProjectApplication      : Started PersonalProjectApplication in 11.992 seconds (JVM running for 13.74)
+2016-07-18 12:50:36.228  INFO 4135 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-07-18 12:50:36.229  INFO 4135 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-07-18 12:50:36.254  INFO 4135 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2016-07-18 12:50:36.620  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 11-111-11 - Checking...
+2016-07-18 12:50:36.620  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : Before Read: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.620  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : In Read: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.621  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : Before Write: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.621  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : In Write: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.621  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : After Write: Vin = 11-111-11** Side = LEFT - Speedo Number = 10
+2016-07-18 12:50:36.621  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 11-111-11 - Was checked
+2016-07-18 12:50:36.622  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin -11-111-11 - Checking...
+2016-07-18 12:50:36.622  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : Before Read: Side = RIGHT - Speedo Number = 10
+2016-07-18 12:50:36.622  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : In Read: Side = RIGHT - Speedo Number = 10
+2016-07-18 12:50:36.623  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : Before Write: Side = RIGHT - Speedo Number = 10
+2016-07-18 12:50:36.623  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : In Write: Side = RIGHT - Speedo Number = 10
+2016-07-18 12:50:36.623  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : After Write: Vin = 11-111-11** Side = RIGHT - Speedo Number = 31
+2016-07-18 12:50:36.648  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 22-222-22 - Checking...
+2016-07-18 12:50:36.648  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin - 11-111-11 - Was checked
+2016-07-18 12:50:36.648  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : Before Read: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.649  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : In Read: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.649  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : Before Write: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.649  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : In Write: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.649  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : After Write: Vin = 22-222-22** Side = LEFT - Speedo Number = 100
+2016-07-18 12:50:36.649  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 22-222-22 - Was checked
+2016-07-18 12:50:36.649  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin -22-222-22 - Checking...
+2016-07-18 12:50:36.649  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : Before Read: Side = RIGHT - Speedo Number = 100
+2016-07-18 12:50:36.649  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : In Read: Side = RIGHT - Speedo Number = 100
+2016-07-18 12:50:36.649  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : Before Write: Side = RIGHT - Speedo Number = 100
+2016-07-18 12:50:36.650  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : In Write: Side = RIGHT - Speedo Number = 100
+2016-07-18 12:50:36.650  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : After Write: Vin = 22-222-22** Side = RIGHT - Speedo Number = 310
+2016-07-18 12:50:36.650  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin - 22-222-22 - Was checked
+2016-07-18 12:50:36.659  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 44-444-44 - Checking...
+2016-07-18 12:50:36.659  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 55-555-55 - Checking...
+2016-07-18 12:50:36.659  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : Before Read: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.659  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : Before Read: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.659  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : In Read: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.659  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : In Read: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.659  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : Before Write: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.659  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : Before Write: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.660  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : In Write: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.660  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : In Write: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.660  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : After Write: Vin = 44-444-44** Side = LEFT - Speedo Number = 1000
+2016-07-18 12:50:36.660  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : After Write: Vin = 55-555-55** Side = LEFT - Speedo Number = 1000
+2016-07-18 12:50:36.660  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 44-444-44 - Was checked
+2016-07-18 12:50:36.660  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 55-555-55 - Was checked
+2016-07-18 12:50:36.660  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin -44-444-44 - Checking...
+2016-07-18 12:50:36.660  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin -55-555-55 - Checking...
+2016-07-18 12:50:36.660  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : Before Read: Side = RIGHT - Speedo Number = 1000
+2016-07-18 12:50:36.660  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : Before Read: Side = RIGHT - Speedo Number = 1000
+2016-07-18 12:50:36.660  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : In Read: Side = RIGHT - Speedo Number = 1000
+2016-07-18 12:50:36.660  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : In Read: Side = RIGHT - Speedo Number = 1000
+2016-07-18 12:50:36.661  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : Before Write: Side = RIGHT - Speedo Number = 1000
+2016-07-18 12:50:36.661  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : Before Write: Side = RIGHT - Speedo Number = 1000
+2016-07-18 12:50:36.662  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : In Write: Side = RIGHT - Speedo Number = 1000
+2016-07-18 12:50:36.662  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : In Write: Side = RIGHT - Speedo Number = 1000
+2016-07-18 12:50:36.662  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : After Write: Vin = 44-444-44** Side = RIGHT - Speedo Number = 3100
+2016-07-18 12:50:36.662  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : After Write: Vin = 55-555-55** Side = RIGHT - Speedo Number = 3100
+2016-07-18 12:50:36.662  INFO 4135 --- [pool-2-thread-1] c.t.t.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin - 44-444-44 - Was checked
+2016-07-18 12:50:36.663  INFO 4135 --- [pool-2-thread-2] c.t.t.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin - 55-555-55 - Was checked
+2016-07-18 12:50:36.666  INFO 4135 --- [pool-2-thread-3] c.t.t.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 33-333-33 - Checking...
+2016-07-18 12:50:36.666  INFO 4135 --- [pool-2-thread-3] c.t.t.SpecificInstanceToHandleCarActions : Before Read: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.666  INFO 4135 --- [pool-2-thread-3] c.t.t.SpecificInstanceToHandleCarActions : In Read: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.666  INFO 4135 --- [pool-2-thread-3] c.t.t.SpecificInstanceToHandleCarActions : Before Write: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.666  INFO 4135 --- [pool-2-thread-3] c.t.t.SpecificInstanceToHandleCarActions : In Write: Side = LEFT - Speedo Number = 0
+2016-07-18 12:50:36.667  INFO 4135 --- [pool-2-thread-3] c.t.t.SpecificInstanceToHandleCarActions : After Write: Vin = 33-333-33** Side = LEFT - Speedo Number = 1000
+2016-07-18 12:50:36.667  INFO 4135 --- [pool-2-thread-3] c.t.t.SpecificInstanceToHandleCarActions : LEFT wheel for Vin - 33-333-33 - Was checked
+2016-07-18 12:50:36.667  INFO 4135 --- [pool-2-thread-3] c.t.t.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin -33-333-33 - Checking...
+2016-07-18 12:50:36.667  INFO 4135 --- [pool-2-thread-3] c.t.t.SpecificInstanceToHandleCarActions : Before Read: Side = RIGHT - Speedo Number = 1000
+2016-07-18 12:50:36.667  INFO 4135 --- [pool-2-thread-3] c.t.t.SpecificInstanceToHandleCarActions : In Read: Side = RIGHT - Speedo Number = 1000
+2016-07-18 12:50:36.667  INFO 4135 --- [pool-2-thread-3] c.t.t.SpecificInstanceToHandleCarActions : Before Write: Side = RIGHT - Speedo Number = 1000
+2016-07-18 12:50:36.667  INFO 4135 --- [pool-2-thread-3] c.t.t.SpecificInstanceToHandleCarActions : In Write: Side = RIGHT - Speedo Number = 1000
+2016-07-18 12:50:36.667  INFO 4135 --- [pool-2-thread-3] c.t.t.SpecificInstanceToHandleCarActions : After Write: Vin = 33-333-33** Side = RIGHT - Speedo Number = 3100
+2016-07-18 12:50:36.668  INFO 4135 --- [pool-2-thread-3] c.t.t.SpecificInstanceToHandleCarActions : RIGHT wheel for Vin - 33-333-33 - Was checked
+2016-07-18 12:50:36.668  INFO 4135 --- [http-nio-8080-exec-1] c.t.t.MngThreadsToHandleSpecificCar      : The task was completed in time
+ Result: 
+2016-07-18 13:01:00.446  INFO 4135 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a54a73f: startup date [Mon Jul 18 12:50:19 IDT 2016]; root of context hierarchy
+2016-07-18 13:01:00.454  INFO 4135 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-07-18 13:01:00.460  INFO 4135 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-07-18 13:01:00.460  INFO 4135 --- [Thread-3] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-07-18 13:01:00.476  INFO 4135 --- [Thread-3] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
