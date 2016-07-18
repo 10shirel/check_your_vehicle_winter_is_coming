@@ -26,7 +26,7 @@ private static final Logger log = LoggerFactory.getLogger(PersonalProjectApplica
 	}
 
 	/**
-	 * Populate data to h2 DB - Persons and Vehicles
+	 * Populate data to h2 DB  - Persons and Vehicles
 	 * @param personRepository
 	 * @param vehicleRepository
      * @return
