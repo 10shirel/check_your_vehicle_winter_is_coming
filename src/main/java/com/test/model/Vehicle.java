@@ -1,17 +1,21 @@
 package com.test.model;
 
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by shirel on 06/07/2016.
  */
 
+
 @Entity
 public class Vehicle {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(Vehicle.class);
 
     @Id
     private String vin;
@@ -20,7 +24,7 @@ public class Vehicle {
     private String modelName;
 
 
-    private /*transient */int speedometerNumber;
+    private AtomicInteger speedometerNumber = new AtomicInteger(0);
 
 
     protected Vehicle() {}
@@ -35,6 +39,14 @@ public class Vehicle {
         this.vin = vin;
     }
 
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "vin=" + vin +
+                "manufacture=" + manufacture +
+                "modelName=" + modelName +
+                '}';
+    }
 
     public String getVin() {
         return vin;
@@ -67,11 +79,12 @@ public class Vehicle {
         this.manufacture = manufacture;
     }
 
-    public int getSpeedometerNumber() {
+    public AtomicInteger getSpeedometerNumber(String side) {
+        LOGGER.info("In 'getSpeedometerNumber': Side = " + side + " - Speedo Number = " + speedometerNumber);
         return speedometerNumber;
     }
 
     public void setSpeedometerNumber(int speedometerNumber) {
-        this.speedometerNumber = speedometerNumber;
+        this.speedometerNumber = new AtomicInteger(speedometerNumber);
     }
 }
