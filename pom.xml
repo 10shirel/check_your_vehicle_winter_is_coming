@@ -6,7 +6,7 @@
 	<groupId>com.test</groupId>
 	<artifactId>PersonalProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>pom</packaging>
 
 	<name>PersonalProject</name>
 	<description>PersonalProject for Spring Boot</description>
