@@ -3,8 +3,6 @@ package com.test.model;
 /**
  * Created by shirel on 11/07/2016.
  */
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -40,10 +38,14 @@ public class Person {
 
     @Override
     public String toString() {
-        return String.format(
-                "PersonRepository[id=%d, firstName='%s', lastName='%s']",
-                id, firstName, lastName);
+        return "Person{" +
+                "firstName=" + firstName +
+                "lastName=" + lastName +
+                "id=" + id +
+                '}';
     }
+
+
 
     public long getId() {
         return id;
