@@ -56,7 +56,7 @@ private static final int MAX_WAIT_MINUTES = 10;
 
         try {
             if (executor.awaitTermination(MAX_WAIT_MINUTES, TimeUnit.MINUTES)) {
-                LOGGER.debug("The task was completed in time\n" + " Result: " );
+                LOGGER.info("The task was completed in time\n" + " Result: " );
             } else {
                 LOGGER.error("The task was unable to complete in {} minutes", MAX_WAIT_MINUTES);
             }

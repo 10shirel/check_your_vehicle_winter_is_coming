@@ -6,8 +6,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import java.util.concurrent.locks.ReadWriteLock;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * Created by shirel on 13/07/2016.
@@ -22,7 +20,6 @@ public class SpecificInstanceToHandleCarActions implements Runnable {
 
     private Vehicle vehicle;
     
-    private ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
 
     @Override
     public void run() {
@@ -45,16 +42,16 @@ public class SpecificInstanceToHandleCarActions implements Runnable {
      *  Check LEFT Wheel Of SpecificInstanceToHandleCarActions Car
      */
     private void checkLEFTWheelOfSpecificCar(int numberOfRounds) {
-        LOGGER.debug("LEFT wheel for Vin - " + vehicle.getVin() +  " - Checking...");
+        LOGGER.info("LEFT wheel for Vin - " + vehicle.getVin() +  " - Checking...");
         turnTheWheelOfSpecificCarAndSide(numberOfRounds, "LEFT");
-        LOGGER.debug("LEFT wheel for Vin - " + vehicle.getVin() +  " - Was checked");
+        LOGGER.info("LEFT wheel for Vin - " + vehicle.getVin() +  " - Was checked");
 
     }
 
     private void checkRIGHTWheelOfSpecificCar(int numberOfRounds) {
-        LOGGER.debug("RIGHT wheel for Vin -" + vehicle.getVin() +  " - Checking...");
+        LOGGER.info("RIGHT wheel for Vin -" + vehicle.getVin() +  " - Checking...");
         turnTheWheelOfSpecificCarAndSide(numberOfRounds, "RIGHT");
-        LOGGER.debug("RIGHT wheel for Vin - " + vehicle.getVin() +  " - Was checked");
+        LOGGER.info("RIGHT wheel for Vin - " + vehicle.getVin() +  " - Was checked");
     }
 
     /**
@@ -63,30 +60,17 @@ public class SpecificInstanceToHandleCarActions implements Runnable {
      * @param side
      *
      */
-
     private void turnTheWheelOfSpecificCarAndSide(int numberOfRounds, String side) {
         int speedNumber;
 
-        LOGGER.debug("Before Read: Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
-
-        //Read block
-        readWriteLock.readLock().lock();
-            LOGGER.debug("In Read: Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
-            speedNumber = vehicle.getSpeedometerNumber();
-        readWriteLock.readLock().unlock();
+        LOGGER.info("Before 'getSpeedometerNumber': Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber(null));
+            speedNumber = vehicle.getSpeedometerNumber(side).get();
+        LOGGER.info("After 'getSpeedometerNumber': Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber(null));
 
 
-        LOGGER.debug("Before Write: Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
-
-        //Write block
-        readWriteLock.writeLock().lock();
-
-            LOGGER.debug("In Write: Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
+        LOGGER.info("Before 'setSpeedometerNumber': Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber(null));
             this.vehicle.setSpeedometerNumber(speedNumber + numberOfRounds);
-            LOGGER.debug("After Write: " + "Vin = " + vehicle.getVin() + "** Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber());
-
-        readWriteLock.writeLock().unlock();
-
+        LOGGER.info("After 'setSpeedometerNumber' : " + "Vin = " + vehicle.getVin() + "** Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber(null));
 
     }
 
@@ -102,7 +86,7 @@ public class SpecificInstanceToHandleCarActions implements Runnable {
     }
 
     private int readSpeedometer() {
-       return this.vehicle.getSpeedometerNumber();
+       return this.vehicle.getSpeedometerNumber(null).get();
     }
 
 
