@@ -12,8 +12,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 
-@Component
-@Scope("prototype")
 @Entity
 public class Person {
 

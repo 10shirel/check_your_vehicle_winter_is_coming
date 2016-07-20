@@ -10,9 +10,6 @@ import javax.persistence.Id;
  * Created by shirel on 06/07/2016.
  */
 
-
-@Component
-@Scope("prototype")
 @Entity
 public class Vehicle {
 
