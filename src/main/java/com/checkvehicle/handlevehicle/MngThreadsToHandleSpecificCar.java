@@ -43,9 +43,9 @@ private static final int MAX_WAIT_MINUTES = 10;
         try {
             executor = Executors.newFixedThreadPool(MAX_THREADS);
             for (Vehicle vehicle : personalProjectApplication.vehicleRepositoryGlobal.findAll()) {
-                SpecificInstanceToHandleCarActions SpecificInstanceToHandleCarActions = appContext.getBean(SpecificInstanceToHandleCarActions.class);
-                SpecificInstanceToHandleCarActions.setVehicle(vehicle);
-                executor.execute(SpecificInstanceToHandleCarActions);
+                SpecificInstanceToHandleCarActions specificInstanceToHandleCarActions = appContext.getBean(SpecificInstanceToHandleCarActions.class);
+                specificInstanceToHandleCarActions.setVehicle(vehicle);
+                executor.execute(specificInstanceToHandleCarActions);
             }
         } finally {
             if (executor != null) {
