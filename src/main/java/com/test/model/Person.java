@@ -39,9 +39,10 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "firstName=" + firstName +
-                "lastName=" + lastName +
                 "id=" + id +
+                "_firstName=" + firstName +
+                "_lastName=" + lastName +
+                "_vinNumber=" + vinNumber +
                 '}';
     }
 

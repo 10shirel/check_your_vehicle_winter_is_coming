@@ -43,8 +43,8 @@ public class Vehicle {
     public String toString() {
         return "Vehicle{" +
                 "vin=" + vin +
-                "manufacture=" + manufacture +
-                "modelName=" + modelName +
+                "_manufacture=" + manufacture +
+                "_modelName=" + modelName +
                 '}';
     }
 
