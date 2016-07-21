@@ -1,8 +1,8 @@
-package com.test.threads;
+package com.checkvehicle.handlevehicle;
 
 
-import com.test.PersonalProjectApplication;
-import com.test.model.Vehicle;
+import com.checkvehicle.PersonalProjectApplication;
+import com.checkvehicle.model.Vehicle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

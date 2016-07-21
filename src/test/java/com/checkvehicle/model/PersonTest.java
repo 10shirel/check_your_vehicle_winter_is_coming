@@ -1,9 +1,7 @@
-package com.test.model;
+package com.checkvehicle.model;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by shirel on 20/07/2016.

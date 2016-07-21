@@ -1,8 +1,8 @@
-package com.test.ws.api;
+package com.checkvehicle.ws.api;
 
-import com.test.PersonalProjectApplication;
-import com.test.model.Person;
-import com.test.utils.Constants;
+import com.checkvehicle.PersonalProjectApplication;
+import com.checkvehicle.model.Person;
+import com.checkvehicle.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

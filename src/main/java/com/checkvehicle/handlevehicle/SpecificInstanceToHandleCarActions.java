@@ -1,6 +1,6 @@
-package com.test.threads;
+package com.checkvehicle.handlevehicle;
 
-import com.test.model.Vehicle;
+import com.checkvehicle.model.Vehicle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Scope;

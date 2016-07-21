@@ -1,4 +1,4 @@
-package com.test;
+package com.checkvehicle;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;

@@ -1,6 +1,6 @@
-package com.test.dao;
+package com.checkvehicle.dao;
 
-import com.test.model.Vehicle;
+import com.checkvehicle.model.Vehicle;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -22,7 +22,7 @@ public class VehicleRepositoryTest {
 
     @BeforeClass
     public static void executedBeforeEach() {
-        appContext = SpringApplication.run(com.test.PersonalProjectApplication.class);
+        appContext = SpringApplication.run(com.checkvehicle.PersonalProjectApplication.class);
         vehicleRepository = appContext.getBean(VehicleRepository.class);
     }
 

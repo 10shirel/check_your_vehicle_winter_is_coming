@@ -1,4 +1,4 @@
-package com.test.utils;
+package com.checkvehicle.utils;
 
 /**
  * Created by shirel on 13/07/2016.

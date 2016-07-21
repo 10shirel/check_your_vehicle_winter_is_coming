@@ -1,9 +1,9 @@
-package com.test.ws.api;
+package com.checkvehicle.ws.api;
 
-import com.test.PersonalProjectApplication;
-import com.test.threads.MngThreadsToHandleSpecificCar;
-import com.test.model.Vehicle;
-import com.test.utils.Constants;
+import com.checkvehicle.PersonalProjectApplication;
+import com.checkvehicle.handlevehicle.MngThreadsToHandleSpecificCar;
+import com.checkvehicle.model.Vehicle;
+import com.checkvehicle.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

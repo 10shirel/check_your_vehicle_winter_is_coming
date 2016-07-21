@@ -1,10 +1,10 @@
-package com.test.dao;
+package com.checkvehicle.dao;
 
 /**
  * Created by shirel on 11/07/2016.
  */
 
-import com.test.model.Vehicle;
+import com.checkvehicle.model.Vehicle;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

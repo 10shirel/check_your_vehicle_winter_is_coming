@@ -1,9 +1,9 @@
-package com.test;
+package com.checkvehicle;
 
-import com.test.dao.PersonRepository;
-import com.test.dao.VehicleRepository;
-import com.test.model.Person;
-import com.test.model.Vehicle;
+import com.checkvehicle.dao.PersonRepository;
+import com.checkvehicle.dao.VehicleRepository;
+import com.checkvehicle.model.Person;
+import com.checkvehicle.model.Vehicle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

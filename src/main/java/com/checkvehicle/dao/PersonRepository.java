@@ -1,4 +1,4 @@
-package com.test.dao;
+package com.checkvehicle.dao;
 
 /**
  * Created by shirel on 11/07/2016.
@@ -6,7 +6,7 @@ package com.test.dao;
 
 import java.util.List;
 
-import com.test.model.Person;
+import com.checkvehicle.model.Person;
 import org.springframework.data.repository.CrudRepository;
 
 public interface PersonRepository extends CrudRepository<Person, Long> {

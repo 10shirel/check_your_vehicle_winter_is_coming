@@ -1,4 +1,4 @@
-package com.test.model;
+package com.checkvehicle.model;
 
 /**
  * Created by shirel on 11/07/2016.

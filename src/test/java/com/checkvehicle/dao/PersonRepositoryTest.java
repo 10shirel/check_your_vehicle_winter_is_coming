@@ -1,6 +1,6 @@
-package com.test.dao;
+package com.checkvehicle.dao;
 
-import com.test.model.Person;
+import com.checkvehicle.model.Person;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -8,8 +8,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.context.ApplicationContext;
 
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by shirel on 21/07/2016.
@@ -22,7 +20,7 @@ public class PersonRepositoryTest {
 
     @BeforeClass
     public static void executedBeforeEach() {
-        appContext = SpringApplication.run(com.test.PersonalProjectApplication.class);
+        appContext = SpringApplication.run(com.checkvehicle.PersonalProjectApplication.class);
         personRepository = appContext.getBean(PersonRepository.class);
     }
 
