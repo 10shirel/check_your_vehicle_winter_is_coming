@@ -42,16 +42,16 @@ public class SpecificInstanceToHandleCarActions implements Runnable {
      *  Check LEFT Wheel Of SpecificInstanceToHandleCarActions Car
      */
     private void checkLEFTWheelOfSpecificCar(int numberOfRounds) {
-        LOGGER.info("LEFT wheel for Vin - " + vehicle.getVin() +  " - Checking...");
+        LOGGER.debug("LEFT wheel for Vin - " + vehicle.getVin() +  " - Checking...");
         turnTheWheelOfSpecificCarAndSide(numberOfRounds, "LEFT");
-        LOGGER.info("LEFT wheel for Vin - " + vehicle.getVin() +  " - Was checked");
+        LOGGER.debug("LEFT wheel for Vin - " + vehicle.getVin() +  " - Was checked");
 
     }
 
     private void checkRIGHTWheelOfSpecificCar(int numberOfRounds) {
-        LOGGER.info("RIGHT wheel for Vin -" + vehicle.getVin() +  " - Checking...");
+        LOGGER.debug("RIGHT wheel for Vin -" + vehicle.getVin() +  " - Checking...");
         turnTheWheelOfSpecificCarAndSide(numberOfRounds, "RIGHT");
-        LOGGER.info("RIGHT wheel for Vin - " + vehicle.getVin() +  " - Was checked");
+        LOGGER.debug("RIGHT wheel for Vin - " + vehicle.getVin() +  " - Was checked");
     }
 
     /**
@@ -63,14 +63,14 @@ public class SpecificInstanceToHandleCarActions implements Runnable {
     private void turnTheWheelOfSpecificCarAndSide(int numberOfRounds, String side) {
         int speedNumber;
 
-        LOGGER.info("Before 'getSpeedometerNumber': Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber(null));
+        LOGGER.debug("Before 'getSpeedometerNumber': Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber(null));
             speedNumber = vehicle.getSpeedometerNumber(side).get();
-        LOGGER.info("After 'getSpeedometerNumber': Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber(null));
+        LOGGER.debug("After 'getSpeedometerNumber': Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber(null));
 
 
-        LOGGER.info("Before 'setSpeedometerNumber': Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber(null));
+        LOGGER.debug("Before 'setSpeedometerNumber': Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber(null));
             this.vehicle.setSpeedometerNumber(speedNumber + numberOfRounds);
-        LOGGER.info("After 'setSpeedometerNumber' : " + "Vin = " + vehicle.getVin() + "** Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber(null));
+        LOGGER.debug("After 'setSpeedometerNumber' : " + "Vin = " + vehicle.getVin() + "** Side = " + side + " - Speedo Number = " + vehicle.getSpeedometerNumber(null));
 
     }
 
